@@ -13,6 +13,9 @@
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
         
+    <!--====== Animate CSS ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+         
     <!--====== Line Icons CSS ======-->
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
         
@@ -24,65 +27,6 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--====== WhatsApp Float Button CSS ======-->
-    <style>
-        .whatsapp_float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 25px;
-            right: 25px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 30px;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-            text-decoration: none;
-        }
-
-        .whatsapp_float:hover {
-            color: #FFF;
-            background-color: #1ebe5b;
-        }
-
-        .whatsapp_float svg {
-            width: 32px;
-            height: 32px;
-            fill: #FFF;
-        }
-
-        @media (max-width: 767px) {
-            .whatsapp_float {
-                width: 52px;
-                height: 52px;
-                bottom: 18px;
-                right: 18px;
-            }
-
-            .whatsapp_float svg {
-                width: 28px;
-                height: 28px;
-            }
-        }
-
-        /* Mover el botón "volver arriba" al lado izquierdo para que no choque con el de WhatsApp */
-        .back-to-top {
-            right: auto !important;
-            left: 25px !important;
-        }
-
-        @media (max-width: 767px) {
-            .back-to-top {
-                left: 18px !important;
-            }
-        }
-    </style>
     
 </head>
 
@@ -111,14 +55,6 @@
     </div>
 
     <!--====== PRELOADER PART ENDS ======-->
-
-    <!--====== WHATSAPP FLOAT BUTTON ======-->
-    <a href="https://wa.me/5490000000000" class="whatsapp_float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#FFF" d="M16.001 2.667C8.641 2.667 2.667 8.641 2.667 16c0 2.548.712 4.929 1.947 6.958L2.667 29.333l6.552-1.913A13.29 13.29 0 0016.001 29.333C23.361 29.333 29.334 23.36 29.334 16S23.361 2.667 16.001 2.667zm0 24.246a11.18 11.18 0 01-5.706-1.563l-.409-.243-4.233 1.235 1.256-4.13-.267-.424a11.174 11.174 0 01-1.71-5.788c0-6.169 5.02-11.189 11.19-11.189 6.169 0 11.189 5.02 11.189 11.189-.001 6.169-5.021 11.189-11.31 11.189z"/>
-            <path fill="#FFF" d="M22.032 18.677c-.335-.168-1.98-.977-2.287-1.089-.307-.112-.53-.168-.754.168-.223.335-.865 1.089-1.06 1.313-.195.223-.39.251-.725.084-.335-.168-1.414-.521-2.694-1.663-.996-.888-1.668-1.985-1.863-2.32-.195-.335-.021-.517.147-.684.15-.15.335-.39.502-.586.168-.195.223-.335.335-.558.112-.223.056-.419-.028-.586-.084-.168-.754-1.816-1.033-2.487-.272-.653-.549-.564-.754-.575-.195-.01-.419-.012-.642-.012-.223 0-.586.084-.893.419-.307.335-1.171 1.145-1.171 2.792 0 1.647 1.199 3.238 1.366 3.462.168.223 2.362 3.605 5.722 5.055.799.345 1.423.551 1.909.705.802.255 1.532.219 2.109.133.643-.096 1.98-.809 2.259-1.591.279-.782.279-1.452.195-1.591-.084-.14-.307-.223-.642-.39z"/>
-        </svg>
-    </a>
     
     <!--====== HEADER PART START ======-->
 
@@ -173,7 +109,7 @@
             <div class="col-lg-6">
                 <div class="header_hero_content mt-45">
                     <h2 class="header_title">Tecnología que simplifica tu negocio</h2>
-                    <p>Diseñamos automatizaciones, bots de WhatsApp y herramientas digitales para hacer que tu negocio trabaje de manera más eficiente.</p>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
                     
                 </div> <!-- header hero content -->
             </div>
@@ -198,7 +134,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single_features mt-30 features_1 text-center">
+                    <div class="single_features mt-30 features_1 text-center wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
                         <div class="features_icon">
                             <i class="lni lni-cog"></i>
                         </div>
@@ -209,7 +145,7 @@
                     </div> <!-- single featuresow -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single_features mt-30 features_2 text-center">
+                    <div class="single_features mt-30 features_2 text-center wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="features_icon">
                             <i class="lni lni-whatsapp"></i>
                         </div>
@@ -220,9 +156,9 @@
                     </div> <!-- single featuresow -->
                 </div>
                 <div class="col-lg-4 col-md-7 col-sm-8">
-                    <div class="single_features mt-30 features_3 text-center">
+                    <div class="single_features mt-30 features_3 text-center wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.9s">
                         <div class="features_icon">
-                            <i class="lni lni-code"></i>
+                            <i class="lni lni-exit-down"></i>
                         </div>
                         <div class="features_content">
                             <h4 class="features_title">Free</h4>
@@ -261,13 +197,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-9">
-                    <div class="about_image mt-50">
+                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <img class="image" src="assets/images/about.png" alt="about">
                         <img class="dots" src="assets/images/dots.svg" alt="dots">
                     </div> <!-- about image -->
                 </div>
                 <div class="col-lg-6">
-                    <div class="about_content mt-45">
+                    <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="section_title">
                             <h4 class="title">Automatización de procesos</h4>
                             <p>Convertimos tareas manuales y repetitivas en flujos automatizados.
@@ -293,13 +229,13 @@ No se trata de automatizar por automatizar: buscamos que la tecnología realment
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-9">
-                    <div class="about_image mt-50">
+                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <img class="image" src="assets/images/abouttt.png" alt="about">
                         <img class="dots" src="assets/images/dots.svg" alt="dots">
                     </div> <!-- about image -->
                 </div>
                 <div class="col-lg-6">
-                    <div class="about_content mt-45">
+                    <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="section_title">
                             <h4 class="title">Bots de WhatsApp</h4>
                             <p>Desarrollamos bots personalizados para WhatsApp que pueden atender consultas, tomar pedidos, gestionar turnos, recopilar información, enviar recordatorios y asistir a tus clientes.
@@ -325,13 +261,13 @@ Todo desde un canal que tus clientes ya utilizan, sin necesidad de descargar una
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-9">
-                    <div class="about_image mt-50">
+                    <div class="about_image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <img class="image" src="assets/images/aboutt.png" alt="about">
                         <img class="dots" src="assets/images/dots.svg" alt="dots">
                     </div> <!-- about image -->
                 </div>
                 <div class="col-lg-6">
-                    <div class="about_content mt-45">
+                    <div class="about_content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="section_title">
                             <h4 class="title">Desarrollo web</h4>
                             <p>Creamos páginas web y soluciones digitales adaptadas a las necesidades de cada negocio.
@@ -379,7 +315,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
             </div> <!-- row -->
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-8 col-sm-10">
-                    <div class="single_pricing text-center pricing_color_1 mt-30">
+                    <div class="single_pricing text-center pricing_color_1 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
                         <div class="pricing_top_bar">
                             <h5 class="pricing_title">Startup</h5>
                             <i class="lni lni-coffee-cup"></i>
@@ -398,7 +334,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                     </div>  <!-- single pricing -->
                 </div>
                 <div class="col-lg-4 col-md-8 col-sm-10">
-                    <div class="single_pricing text-center pricing_active pricing_color_2 mt-30">
+                    <div class="single_pricing text-center pricing_active pricing_color_2 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="pricing_top_bar">
                             <h5 class="pricing_title">Standard</h5>
                             <i class="lni lni-crown"></i>
@@ -417,7 +353,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                     </div>  <!-- single pricing -->
                 </div>
                 <div class="col-lg-4 col-md-8 col-sm-10">
-                    <div class="single_pricing text-center pricing_color_3 mt-30">
+                    <div class="single_pricing text-center pricing_color_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                         <div class="pricing_top_bar">
                             <h5 class="pricing_title">Premium</h5>
                             <i class="lni lni-diamond-alt"></i>
@@ -458,12 +394,22 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
             <div class="row justify-content-center">
 
                 <div class="col-lg-4 col-md-8">
-                    <div class="single_blog blog_1 mt-30">
+                    <div class="single_blog blog_1 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
                         <div class="blog_image">
                             <img src="assets/images/blog-1.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
-                           
+                            <div class="blog_meta d-flex justify-content-between">
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <h4 class="blog_title"><a href="#">celebe</a></h4>
                             <a href="https://agile-mountain-95621-c3121802f273.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Ver</a>
                         </div>
@@ -473,12 +419,22 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
 
 
                 <div class="col-lg-4 col-md-8">
-                    <div class="single_blog blog_2 mt-30">
+                    <div class="single_blog blog_2 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="blog_image">
                             <img src="assets/images/blog-2.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
-                          
+                            <div class="blog_meta d-flex justify-content-between">
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <h4 class="blog_title"><a href="#">Bycloe.</a></h4>
                             <a href="https://still-forest-49507-e914233f6211.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Ver</a>
                         </div>
@@ -487,13 +443,23 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
 
 
 
-                  <div class="col-lg-4 col-md-8">
-                    <div class="single_blog blog_2 mt-30">
+                                <div class="col-lg-4 col-md-8">
+                    <div class="single_blog blog_2 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
                         <div class="blog_image">
-                            <img src="assets/images/blog-3.jpg" alt="blog">
+                            <img src="assets/images/blog-2.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
-                            
+                            <div class="blog_meta d-flex justify-content-between">
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <h4 class="blog_title"><a href="#">fravega.</a></h4>
                             <a href="https://immense-thicket-20786-f6dc332fea4d.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Ver</a>
                         </div>
@@ -503,12 +469,22 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
 
 
                 <div class="col-lg-4 col-md-8">
-                    <div class="single_blog blog_3 mt-30">
+                    <div class="single_blog blog_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                         <div class="blog_image">
-                            <img src="assets/images/blog-4.jpg" alt="blog">
+                            <img src="assets/images/blog-3.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
-                            
+                            <div class="blog_meta d-flex justify-content-between">
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             <h4 class="blog_title"><a href="#">Gym.</a></h4>
                             <a href="https://fast-garden-19477-799e67a734c9.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Read More</a>
                         </div>
@@ -517,31 +493,71 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
 
 
                <div class="col-lg-4 col-md-8">
-                    <div class="single_blog blog_3 mt-30">
+                    <div class="single_blog blog_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                         <div class="blog_image">
-                            <img src="assets/images/blog-5.jpg" alt="blog">
+                            <img src="assets/images/blog-3.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
                             <div class="blog_meta d-flex justify-content-between">
-                               
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <h4 class="blog_title"><a href="#">brigante</a></h4>
+                            <h4 class="blog_title"><a href="#">Super fast and strong security.</a></h4>
                             <a href="https://frozen-dusk-83566-a55dc1c75594.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Read More</a>
                         </div>
                     </div> <!-- single blog -->
                 </div>
 
 
-       
-
                 <div class="col-lg-4 col-md-8">
-                    <div class="single_blog blog_3 mt-30">
+                    <div class="single_blog blog_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                         <div class="blog_image">
-                            <img src="assets/images/blog-6.jpg" alt="blog">
+                            <img src="assets/images/blog-3.jpg" alt="blog">
                         </div>
                         <div class="blog_content">
-                      
-                            <h4 class="blog_title"><a href="#">beautyweb</a></h4>
+                            <div class="blog_meta d-flex justify-content-between">
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4 class="blog_title"><a href="#">brigante.</a></h4>
+                            <a href="https://radiant-castle-95648-73f3ba41ada6.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Read More</a>
+                        </div>
+                    </div> <!-- single blog -->
+                </div>
+
+
+                <div class="col-lg-4 col-md-8">
+                    <div class="single_blog blog_3 mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-3.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content">
+                            <div class="blog_meta d-flex justify-content-between">
+                                <div class="meta_date">
+                                    <span>20 December, 2023</span>
+                                </div>
+                                <div class="meta_like">
+                                    <ul>
+                                        <li><a href="#"><i class="lni lni-comments-alt"></i> 20</a></li>
+                                        <li><a href="#"><i class="lni lni-heart"></i> 15</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h4 class="blog_title"><a href="#">brigante.</a></h4>
                             <a href="https://radiant-castle-95648-73f3ba41ada6.herokuapp.com/" class="main-btn"  target="_blank" rel="noopener noreferrer">Read More</a>
                         </div>
                     </div> <!-- single blog -->
@@ -618,6 +634,9 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
+    
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
     
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>

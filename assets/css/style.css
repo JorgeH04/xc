@@ -1012,6 +1012,22 @@ p {
   width: 100%;
 }
 
+/*===== HERO: subir texto e imagen (solo desktop) =====*/
+/* En desktop el texto y la imagen se suben un poco.
+   En tablet/celular NO se aplica ningun desplazamiento, asi la imagen
+   queda debajo del texto (separada) y no encima. */
+@media only screen and (min-width: 992px) {
+  .header_hero_content {
+    -webkit-transform: translateY(-50px);
+    transform: translateY(-50px);
+  }
+
+  .header_image .image {
+    -webkit-transform: translateY(-200px);
+    transform: translateY(-200px);
+  }
+}
+
 /*===========================
       03.FEATURES css 
 ===========================*/
