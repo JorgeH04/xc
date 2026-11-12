@@ -1,0 +1,582 @@
+/* assets/css/casos.css */
+/* ------------------------------------------------------------------
+   Estilos extra para demos.html y las páginas de casos (casos/*.html).
+   Se carga DESPUÉS de style.css. No modifica style.css.
+------------------------------------------------------------------- */
+
+
+/* ==================================================================
+   1. Botón flotante de WhatsApp y botón "volver arriba"
+   (mismo código que tiene index.html en su <style>)
+================================================================== */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+.whatsapp_float:hover {
+    color: #FFF;
+    background-color: #1ebe5b;
+}
+
+.whatsapp_float svg {
+    width: 32px;
+    height: 32px;
+    fill: #FFF;
+}
+
+@media (max-width: 767px) {
+    .whatsapp_float {
+        width: 52px;
+        height: 52px;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .whatsapp_float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.back-to-top {
+    right: auto !important;
+    left: 25px !important;
+}
+
+@media (max-width: 767px) {
+    .back-to-top {
+        left: 18px !important;
+    }
+}
+
+
+/* ==================================================================
+   2. Base de las páginas internas
+   (el menú ya viene fijo con la clase "sticky", por eso hace falta
+   dejar lugar arriba)
+================================================================== */
+.inner_main {
+    position: relative;
+    z-index: 99;
+}
+
+.page_head {
+    padding: 130px 0 50px;
+}
+
+@media (max-width: 767px) {
+    .page_head {
+        padding: 105px 0 35px;
+    }
+}
+
+.page_head .title {
+    font-size: 42px;
+    line-height: 1.25;
+}
+
+@media (max-width: 767px) {
+    .page_head .title {
+        font-size: 28px;
+    }
+}
+
+.page_head p {
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.main-btn:focus-visible,
+.caso_toc a:focus-visible,
+.caso_volver:focus-visible {
+    outline: 2px solid #3698EE;
+    outline-offset: 3px;
+}
+
+
+/* ==================================================================
+   3. Marcas de "texto de ejemplo" (para borrar cuando cargues lo real)
+================================================================== */
+.tag_ejemplo {
+    display: inline-block;
+    background: #fff4cc;
+    color: #6b5200;
+    border: 1px solid #f0d36b;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 1.3;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+}
+
+.caso_aviso {
+    background: #fff8e1;
+    border: 1px solid #ffe08a;
+    color: #6b5200;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 12px 16px;
+    margin-bottom: 30px;
+}
+
+
+/* ==================================================================
+   4. demos.html (índice de casos)
+================================================================== */
+.demos_group {
+    /* para que el menú fijo no tape el título al llegar desde index.html#... */
+    scroll-margin-top: 90px;
+}
+
+.demos_group .section_title .title {
+    font-size: 36px;
+}
+
+@media (max-width: 767px) {
+    .demos_group .section_title .title {
+        font-size: 28px;
+    }
+}
+
+/* tarjetas del mismo alto, con el botón siempre abajo */
+.demos_page .single_blog {
+    height: calc(100% - 30px); /* 30px = el mt-30 de la tarjeta */
+    display: flex;
+    flex-direction: column;
+}
+
+.demos_page .single_blog .blog_image img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    background: #eaf4fe;
+}
+
+.demos_page .single_blog .blog_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.demos_page .single_blog .blog_content .blog_title {
+    margin-bottom: 12px;
+}
+
+.demos_page .single_blog .blog_content p {
+    margin-bottom: 25px;
+}
+
+.demos_page .single_blog .blog_content .main-btn {
+    margin-top: auto;
+}
+
+
+/* ==================================================================
+   5. Páginas de caso (casos/*.html)
+================================================================== */
+.caso_breadcrumb {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.caso_breadcrumb a {
+    color: #3698EE;
+}
+
+.caso_breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.caso_breadcrumb span {
+    color: #677284;
+    margin: 0 6px;
+}
+
+.caso_head_texto {
+    max-width: 760px;
+}
+
+.caso_area {
+    position: relative;
+    z-index: 99;
+    background: #fff;
+    padding: 30px 0 70px;
+}
+
+/* ---- Layout: índice + contenido ---- */
+.caso_layout {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .caso_layout {
+        display: flex;
+        align-items: flex-start;
+        gap: 56px;
+    }
+}
+
+.caso_content {
+    min-width: 0;
+    max-width: 760px;
+}
+
+/* ---- Índice: barra de botones en celular ---- */
+.caso_toc {
+    position: sticky;
+    top: 75px; /* alto del menú fijo */
+    z-index: 90;
+    background: #fff;
+    margin: 0 -15px 28px;
+    padding: 10px 15px;
+    box-shadow: 0 10px 14px -12px rgba(0, 0, 0, 0.25);
+}
+
+.caso_toc_title {
+    display: none;
+}
+
+.caso_toc ul {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+}
+
+.caso_toc li {
+    flex: 0 0 auto;
+}
+
+.caso_toc li a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 14px;
+    color: #3A424E;
+    border: 1px solid #dde3ea;
+    border-radius: 30px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.caso_toc li.active a {
+    background: #3698EE;
+    border-color: #3698EE;
+    color: #fff;
+}
+
+/* ---- Índice: lista lateral en pantallas grandes ---- */
+@media (min-width: 992px) {
+    .caso_toc {
+        top: 105px;
+        flex: 0 0 230px;
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1;
+    }
+
+    .caso_toc_title {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #3A424E;
+        margin-bottom: 12px;
+    }
+
+    .caso_toc ul {
+        display: block;
+        overflow: visible;
+        white-space: normal;
+    }
+
+    .caso_toc li a {
+        padding: 9px 16px;
+        border: 0;
+        border-left: 3px solid #e6ebf1;
+        border-radius: 0;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .caso_toc li a:hover {
+        color: #3698EE;
+    }
+
+    .caso_toc li.active a {
+        background: transparent;
+        border-left-color: #3698EE;
+        color: #3698EE;
+        font-weight: 600;
+    }
+}
+
+/* ---- Secciones del caso ---- */
+/* Punto de llegada del scroll: queda 90px arriba del título para que
+   no lo tape el menú fijo (ni la barra del índice en celular) */
+.caso_anchor {
+    display: block;
+    position: relative;
+    top: -90px;
+    height: 0;
+    visibility: hidden;
+}
+
+.caso_section {
+    margin-bottom: 56px;
+}
+
+.caso_section h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+@media (max-width: 767px) {
+    .caso_section h2 {
+        font-size: 24px;
+    }
+}
+
+.caso_section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+/* Lista con tildes */
+.caso_check {
+    margin: 22px 0 8px;
+}
+
+.caso_check li {
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+.caso_check li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 20px;
+    color: #3698EE;
+}
+
+/* Pasos (es una secuencia, por eso van numerados) */
+.caso_steps {
+    counter-reset: paso;
+    margin-top: 26px;
+}
+
+.caso_steps li {
+    position: relative;
+    padding: 0 0 28px 62px;
+}
+
+.caso_steps li::before {
+    counter-increment: paso;
+    content: counter(paso);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    background: #3698EE;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.caso_steps li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 48px;
+    bottom: 6px;
+    width: 2px;
+    background: #dcebfa;
+}
+
+.caso_steps h5 {
+    margin-bottom: 6px;
+    padding-top: 8px;
+}
+
+.caso_steps p {
+    margin-bottom: 0;
+}
+
+/* ---- Videos ---- */
+.video_block {
+    margin-bottom: 40px;
+}
+
+.video_block .embed-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #0b1220;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.caso_section .video_caption {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.caso_section .video_caption strong {
+    display: block;
+    font-size: 16px;
+    color: #3A424E;
+}
+
+/* Videos verticales, dentro de un marco de celular */
+.caso_section .phone_item .video_caption {
+    text-align: center;
+}
+
+.phones_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.phone_item {
+    flex: 0 1 270px;
+    max-width: 100%;
+}
+
+.phone_frame {
+    background: #2b3340;
+    border: 8px solid #2b3340;
+    border-radius: 36px;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.2);
+}
+
+.phone_screen {
+    position: relative;
+    padding-top: 177.78%; /* proporción 9:16 */
+    background: #000;
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+.phone_screen video,
+.phone_screen iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: contain;
+}
+
+/* ---- Antes / Ahora ---- */
+.resultado_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 22px 0;
+}
+
+@media (min-width: 576px) {
+    .resultado_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.resultado_box {
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.resultado_box h5 {
+    margin-bottom: 10px;
+}
+
+.resultado_box p {
+    margin-bottom: 0;
+}
+
+.resultado_box.ahora {
+    background: #eaf4fe;
+}
+
+/* ---- Contacto ---- */
+.caso_cta {
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 34px 28px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .caso_cta {
+        padding: 28px 18px;
+    }
+}
+
+.caso_cta p {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-btn.btn_whatsapp {
+    background-color: #25d366;
+    margin-top: 8px;
+}
+
+.main-btn.btn_whatsapp:hover {
+    background-color: #1ebe5b;
+}
+
+.main-btn.btn_whatsapp i {
+    margin-right: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.caso_volver {
+    display: inline-block;
+    margin-top: 22px;
+    color: #3698EE;
+    font-weight: 500;
+}
+
+.caso_volver i {
+    margin-right: 6px;
+}
+
+.caso_volver:hover {
+    color: #3698EE;
+    text-decoration: underline;
+}

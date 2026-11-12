@@ -12,6 +12,12 @@ $(function() {
     //===== Sticky
 
     $(window).on('scroll', function (event) {
+        // En las páginas internas (demos.html y casos/) el menú ya viene fijo,
+        // con fondo blanco y logo oscuro: no hay que cambiarlo al hacer scroll.
+        if ($("body").hasClass("inner_page")) {
+            return;
+        }
+
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".header_navbar").removeClass("sticky");

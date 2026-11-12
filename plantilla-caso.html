@@ -1,0 +1,375 @@
+<!-- casos/plantilla-caso.html -->
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <!-- ▶ REEMPLAZAR: título de la pestaña del navegador y de Google (formato: "Nombre del caso | Megadev") -->
+    <title>Título del caso | Megadev</title>
+    
+    <meta name="description" content="Descripción corta del caso (1 o 2 frases).">
+    <!-- ▶ BORRAR esta línea (noindex) cuando el caso tenga el contenido real y quieras que aparezca en Google -->
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.4.5.2.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="../assets/css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--====== Casos CSS (estilos extra de demos.html y casos/) ======-->
+    <link rel="stylesheet" href="../assets/css/casos.css">
+    
+</head>
+
+<body class="inner_page caso_page">
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== WHATSAPP FLOAT BUTTON ======-->
+    <a href="https://wa.me/5491153896519" class="whatsapp_float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFF" d="M16.001 2.667C8.641 2.667 2.667 8.641 2.667 16c0 2.548.712 4.929 1.947 6.958L2.667 29.333l6.552-1.913A13.29 13.29 0 0016.001 29.333C23.361 29.333 29.334 23.36 29.334 16S23.361 2.667 16.001 2.667zm0 24.246a11.18 11.18 0 01-5.706-1.563l-.409-.243-4.233 1.235 1.256-4.13-.267-.424a11.174 11.174 0 01-1.71-5.788c0-6.169 5.02-11.189 11.19-11.189 6.169 0 11.189 5.02 11.189 11.189-.001 6.169-5.021 11.189-11.31 11.189z"/>
+            <path fill="#FFF" d="M22.032 18.677c-.335-.168-1.98-.977-2.287-1.089-.307-.112-.53-.168-.754.168-.223.335-.865 1.089-1.06 1.313-.195.223-.39.251-.725.084-.335-.168-1.414-.521-2.694-1.663-.996-.888-1.668-1.985-1.863-2.32-.195-.335-.021-.517.147-.684.15-.15.335-.39.502-.586.168-.195.223-.335.335-.558.112-.223.056-.419-.028-.586-.084-.168-.754-1.816-1.033-2.487-.272-.653-.549-.564-.754-.575-.195-.01-.419-.012-.642-.012-.223 0-.586.084-.893.419-.307.335-1.171 1.145-1.171 2.792 0 1.647 1.199 3.238 1.366 3.462.168.223 2.362 3.605 5.722 5.055.799.345 1.423.551 1.909.705.802.255 1.532.219 2.109.133.643-.096 1.98-.809 2.259-1.591.279-.782.279-1.452.195-1.591-.084-.14-.307-.223-.642-.39z"/>
+        </svg>
+    </a>
+    
+    <!--====== HEADER PART START ======-->
+    <!-- Menú de página interna: ya viene "sticky" (fijo, fondo blanco, logo oscuro).
+         Los links a otras páginas NO llevan la clase "page-scroll". -->
+
+    <section class="header_area">
+        <div class="header_navbar sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="../index.html">
+                                 <img src="../assets/images/logo-2.svg" alt="Megadev">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a href="../index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#about">Automatizaciones</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#abou">Agentes de WhatsApp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="../index.html#abo">Desarrollo Web</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a href="../demos.html">Demos</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header navbar -->
+    </section>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <main class="inner_main">
+
+    <!--====== ENCABEZADO DEL CASO ======-->
+
+    <section class="page_head gray-bg">
+        <div class="container">
+            <div class="caso_head_texto">
+                <!-- ▶ REEMPLAZAR: categoría. Cambiá el texto y el ancla (#automatizaciones, #whatsapp o #sitios-web) -->
+                <div class="caso_breadcrumb">
+                    <a href="../demos.html">Casos</a><span>/</span><a href="../demos.html#automatizaciones">Automatizaciones</a>
+                </div>
+                <!-- ▶ REEMPLAZAR: título del caso -->
+                <h1 class="title">[Título del caso: qué se resolvió, en pocas palabras]</h1>
+                <!-- ▶ REEMPLAZAR: bajada (1 o 2 frases que resuman el caso) -->
+                <p>[Una o dos frases que resuman el caso: qué problema tenía el cliente y qué logró con Megadev.]</p>
+            </div>
+        </div>
+    </section>
+
+    <!--====== CONTENIDO DEL CASO ======-->
+
+    <section class="caso_area">
+        <div class="container">
+            <!-- ▶ BORRAR este aviso cuando cargues el contenido real -->
+            <div class="caso_aviso">Este caso es un ejemplo con texto provisorio: reemplazá los textos, videos y resultados por los reales antes de publicarlo.</div>
+            <div class="caso_layout">
+
+                        <!-- ÍNDICE: en celular es una barra de botones; en pantalla grande, una lista a la izquierda.
+                             Cada href tiene que coincidir con el id de una sección (ver más abajo). -->
+                        <nav class="caso_toc" aria-label="Índice del caso">
+                            <p class="caso_toc_title">En esta página</p>
+                            <ul>
+                                <li><a class="page-scroll" href="#problema">El problema</a></li>
+                                <li><a class="page-scroll" href="#como-funciona">Cómo funciona</a></li>
+                                <li><a class="page-scroll" href="#demo">Demo en video</a></li>
+                                <li><a class="page-scroll" href="#resultado">Resultado</a></li>
+                                <li><a class="page-scroll" href="#contacto">Contacto</a></li>
+                            </ul>
+                        </nav>
+
+                <div class="caso_content">
+
+                    <!-- ============ 1. EL PROBLEMA ============ -->
+                    <section class="caso_section">
+                        <!-- ▶ NO BORRAR: este span es el punto de llegada del índice (el id tiene que coincidir con el href del índice) -->
+                        <span id="problema" class="caso_anchor"></span>
+                        <h2>El problema</h2>
+                        <!-- ▶ REEMPLAZAR: contá cómo era la situación del cliente antes (en lenguaje de negocio, sin tecnicismos) -->
+                        <p>[Contá cómo era la situación del cliente antes de trabajar con Megadev: qué tarea hacía, cuánto tiempo le llevaba y por qué era un problema.]</p>
+                        <p>[Podés sumar otro párrafo si hace falta. Mejor frases cortas y sin palabras técnicas.]</p>
+                        <!-- ▶ REEMPLAZAR: 3 situaciones concretas. Para sumar o quitar una, copiá o borrá un <li> -->
+                        <ul class="caso_check">
+                                <li><i class="lni lni-checkmark-circle"></i>[Primera situación concreta que se repetía.]</li>
+                                <li><i class="lni lni-checkmark-circle"></i>[Segunda situación concreta.]</li>
+                                <li><i class="lni lni-checkmark-circle"></i>[Tercera situación concreta.]</li>
+                        </ul>
+                    </section>
+
+                    <!-- ============ 2. CÓMO FUNCIONA ============ -->
+                    <section class="caso_section">
+                        <span id="como-funciona" class="caso_anchor"></span>
+                        <h2>Cómo funciona</h2>
+                        <!-- ▶ REEMPLAZAR: una frase de introducción -->
+                        <p>[Una frase que explique, en simple, qué hace la solución. Por ejemplo: "Nosotros armamos el proceso a la medida de tu negocio. Para vos, funciona así:"]</p>
+                        <!-- ▶ REEMPLAZAR: los pasos, en orden. La numeración es automática: para sumar uno, copiá un <li> completo -->
+                        <ol class="caso_steps">
+                                <li>
+                                    <h5>[Paso 1: lo que hace el cliente]</h5>
+                                    <p>[Explicalo en una o dos frases.]</p>
+                                </li>
+                                <li>
+                                    <h5>[Paso 2: lo que hace la solución]</h5>
+                                    <p>[Explicalo en una o dos frases.]</p>
+                                </li>
+                                <li>
+                                    <h5>[Paso 3]</h5>
+                                    <p>[Explicalo en una o dos frases.]</p>
+                                </li>
+                                <li>
+                                    <h5>[Paso 4: lo que recibe el cliente]</h5>
+                                    <p>[Explicalo en una o dos frases.]</p>
+                                </li>
+                        </ol>
+                    </section>
+
+                    <!-- ============ 3. DEMO EN VIDEO ============ -->
+                    <section class="caso_section">
+                        <span id="demo" class="caso_anchor"></span>
+                        <h2>Demo en video</h2>
+                        <!-- ▶ REEMPLAZAR: una frase para presentar los videos -->
+                        <p>[Una frase para presentar los videos. Por ejemplo: "Mirá cómo funciona en la práctica."]</p>
+
+                        <!-- ------------------------------------------------------------
+                             VIDEO HORIZONTAL 1 (16:9)
+                             ▶ Poné el archivo en assets/videos/ con este nombre exacto: caso-horizontal-1.mp4
+                             ▶ Para usar YouTube en vez de archivo: reemplazá el <video> por
+                               <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/ID_DEL_VIDEO" title="..." loading="lazy" allowfullscreen></iframe>
+                             ------------------------------------------------------------ -->
+                        <div class="video_block">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video class="embed-responsive-item" controls preload="metadata" playsinline>
+                                    <source src="../assets/videos/caso-horizontal-1.mp4" type="video/mp4">
+                                    Tu navegador no puede reproducir este video.
+                                </video>
+                            </div>
+                            <!-- ▶ REEMPLAZAR: título y descripción corta del video -->
+                            <p class="video_caption"><strong>[Título del video horizontal]</strong>[Una frase que cuente qué se ve en el video.]</p>
+                        </div>
+
+                        <!-- ------------------------------------------------------------
+                             VIDEO HORIZONTAL 2 (16:9)
+                             ▶ Archivo: assets/videos/caso-horizontal-2.mp4
+                             ▶ Si no lo usás, borrá este bloque entero.
+                             ▶ OPCIONAL: poster="../assets/images/casos/portada.jpg" para elegir la imagen previa.
+                             ------------------------------------------------------------ -->
+                        <div class="video_block">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <video class="embed-responsive-item" controls preload="metadata" playsinline>
+                                    <source src="../assets/videos/caso-horizontal-2.mp4" type="video/mp4">
+                                    Tu navegador no puede reproducir este video.
+                                </video>
+                            </div>
+                            <p class="video_caption"><strong>[Título de otro video horizontal]</strong>[Una frase que cuente qué se ve en el video.]</p>
+                        </div>
+
+                        <!-- ------------------------------------------------------------
+                             VIDEOS VERTICALES (tipo celular, 9:16)
+                             Cada "phone_item" es un video. Se acomodan solos: uno debajo del otro
+                             en celular y de a dos en pantallas más grandes.
+                             ▶ COPIAR un <div class="phone_item"> completo para sumar otro.
+                             ------------------------------------------------------------ -->
+                        <div class="video_block">
+                            <div class="phones_row">
+
+                                <!-- Vertical 1 · archivo: assets/videos/caso-vertical-1.mp4 -->
+                                <div class="phone_item">
+                                    <div class="phone_frame">
+                                        <div class="phone_screen">
+                                            <video controls preload="metadata" playsinline>
+                                                <source src="../assets/videos/caso-vertical-1.mp4" type="video/mp4">
+                                                Tu navegador no puede reproducir este video.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <p class="video_caption"><strong>[Título del video vertical]</strong>[Qué se ve en el video.]</p>
+                                </div>
+
+                                <!-- Vertical 2 · archivo: assets/videos/caso-vertical-2.mp4
+                                     (para un YouTube Short, reemplazá el <video> por
+                                      <iframe src="https://www.youtube-nocookie.com/embed/ID_DEL_SHORT" title="..." loading="lazy" allowfullscreen></iframe>) -->
+                                <div class="phone_item">
+                                    <div class="phone_frame">
+                                        <div class="phone_screen">
+                                            <video controls preload="metadata" playsinline>
+                                                <source src="../assets/videos/caso-vertical-2.mp4" type="video/mp4">
+                                                Tu navegador no puede reproducir este video.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <p class="video_caption"><strong>[Título de otro video vertical]</strong>[Qué se ve en el video.]</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ============ 4. RESULTADO ============ -->
+                    <section class="caso_section">
+                        <span id="resultado" class="caso_anchor"></span>
+                        <h2>Resultado</h2>
+                        <!-- ▶ REEMPLAZAR: cómo era el trabajo antes y cómo quedó después (ideal: con datos reales, como horas ahorradas) -->
+                        <div class="resultado_grid">
+                            <div class="resultado_box">
+                                <h5>Antes</h5>
+                                <p>[Cómo se trabajaba antes: tiempo que llevaba, errores, molestias.]</p>
+                            </div>
+                            <div class="resultado_box ahora">
+                                <h5>Ahora</h5>
+                                <p>[Cómo se trabaja ahora: qué se ahorra, qué mejoró.]</p>
+                            </div>
+                        </div>
+                        <!-- ▶ REEMPLAZAR (o borrar): cierre con un dato concreto o una frase del cliente -->
+                        <p>[Dato concreto o frase del cliente. Por ejemplo: "Pasamos de X horas por mes a Y minutos."]</p>
+                    </section>
+
+                    <!-- ============ 5. CONTACTO ============ -->
+                    <section class="caso_section">
+                        <span id="contacto" class="caso_anchor"></span>
+                        <h2>Contacto</h2>
+                        <div class="caso_cta">
+                            <!-- ▶ REEMPLAZAR: texto invitando a escribir -->
+                            <p>[¿Querés algo parecido para tu negocio? Contanos cómo trabajás hoy y te mostramos cómo se podría resolver.]</p>
+                            <!-- ▶ REEMPLAZAR: el mensaje que llega precargado en WhatsApp (después de "?text=").
+                                 Tiene que ir con espacios como %20 y acentos codificados. Ej.: Hola%20Megadev!%20Vi%20el%20caso... -->
+                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Vi%20el%20caso%20%22T%C3%ADtulo%20del%20caso%22%20y%20quiero%20consultar%20por%20algo%20parecido%20para%20mi%20negocio." class="main-btn btn_whatsapp" target="_blank" rel="noopener noreferrer"><i class="lni lni-whatsapp"></i>Escribinos por WhatsApp</a>
+                            <br>
+                            <!-- ▶ REEMPLAZAR: el ancla (#automatizaciones, #whatsapp o #sitios-web) según el tipo de caso -->
+                            <a href="../demos.html#automatizaciones" class="caso_volver"><i class="lni lni-arrow-left"></i>Volver a casos</a>
+                        </div>
+                    </section>
+
+                </div> <!-- caso content -->
+            </div> <!-- caso layout -->
+        </div> <!-- container -->
+    </section>
+
+    </main>
+
+    <!--====== FOOTER PART START ======-->
+
+    <section id="footer" class="footer_area pt-75 pb-80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="footer_subscribe text-center">
+                        
+                    </div> <!-- footer subscribe -->
+                    <div class="footer_social text-center mt-60">
+                        <ul>
+                            <li><a href="#"><span class="lni lni-instagram-filled"></span></a></li>
+                            <li><a href="#"><span class="lni lni-facebook-filled"></span></a></li>
+
+                        </ul>
+                    </div> <!-- footer social -->
+                    <div class="footer_copyright text-center mt-55">
+                        <p>Copyright. Designed and Developed by <a href="" target="_blank" rel="nofollow"></a> <a href="" target="_blank">Megadev</a></p>
+                    </div> <!-- footer copyright -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== Jquery js ======-->
+    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.4.5.2.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+    <script src="../assets/js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="../assets/js/main.js"></script>
+    
+</body>
+
+</html>
