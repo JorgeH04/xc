@@ -674,3 +674,19 @@
 .demos_page .single_blog--simple .blog_content .blog_title {
     margin-bottom: 25px;
 }
+
+
+/* ---- 3 videos de celular en una fila ---- */
+.phones_row--3 {
+    gap: 24px;
+}
+
+.phones_row--3 .phone_item {
+    flex: 0 1 220px;
+}
+
+@media (max-width: 575px) {
+    .phones_row--3 .phone_item {
+        flex-basis: 260px;
+    }
+}
