@@ -618,3 +618,59 @@
     line-height: 1.7;
     margin-bottom: 0;
 }
+
+
+/* ---- demos.html: funciones comunes de las tiendas ---- */
+.tienda_box {
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 28px 30px;
+}
+
+@media (max-width: 575px) {
+    .tienda_box {
+        padding: 22px 18px;
+    }
+}
+
+.tienda_box_title {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.tienda_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px 30px;
+}
+
+@media (min-width: 576px) {
+    .tienda_items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.tienda_items li {
+    position: relative;
+    padding-left: 32px;
+    line-height: 1.6;
+}
+
+.tienda_items li i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #3698EE;
+}
+
+.demos_subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* tarjetas solo con imagen y título */
+.demos_page .single_blog--simple .blog_content .blog_title {
+    margin-bottom: 25px;
+}
