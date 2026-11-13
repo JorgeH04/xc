@@ -580,3 +580,41 @@
     color: #3698EE;
     text-decoration: underline;
 }
+
+
+/* ---- Ventajas (tarjetas) ---- */
+.ventajas_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .ventajas_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.ventaja_card {
+    background: #f6f6f6;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.ventaja_icon {
+    display: block;
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.ventaja_card h5 {
+    margin-bottom: 8px;
+}
+
+.caso_section .ventaja_card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
