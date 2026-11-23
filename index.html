@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -89,6 +88,23 @@
         .pricing_area {
             position: relative;
             z-index: 99;
+        }
+
+        /* "desde $X /mes" en las tarjetas de planes */
+        .pricing_area .price small {
+            font-size: 16px;
+            font-weight: 500;
+            color: #677284;
+        }
+
+        .pricing_area .price .price_desde {
+            display: block;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .pricing_area .price .price_mes {
+            margin-left: 2px;
         }
     </style>
     
@@ -182,6 +198,7 @@
                 <div class="header_hero_content mt-45">
                     <h2 class="header_title">Tecnología que simplifica tu negocio</h2>
                     <p>Diseñamos automatizaciones, bots de WhatsApp y herramientas digitales para hacer que tu negocio trabaje de manera más eficiente.</p>
+                    <p style="margin-top: 15px;">Nos encargamos de las tareas repetitivas, atendemos a tus clientes a cualquier hora y te ayudamos a tener presencia online, para que vos te dediques a lo que mejor sabés hacer.</p>
                     
                 </div> <!-- header hero content -->
             </div>
@@ -398,13 +415,17 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                             <h5 class="pricing_title">Automatizaciones</h5>
 
                              <i class="lni lni-cog"></i>
-                            <span class="price">$50.000</span>
+                            <span class="price"><small class="price_desde">desde</small>$50.000<small class="price_mes">/mes</small></span>
                         </div>
                         <div class="pricing_list">
                             <ul>
-                                <li>Soporte técnico 24/7</li>
-                                <li>Actualizaciones periódicas</li>
-                                <li>Asesoramiento para nuevas automatizaciones</li>
+                                <li>Análisis inicial de tu flujo de trabajo (sin costo)</li>
+                                <li>Automatización de procesos a medida (por ejemplo facturación, vencimientos, carga de datos)<!-- ▶ Si querés limitar la cantidad, escribí "Automatización de hasta N procesos" --></li>
+                                <li>Integración con tus sistemas y archivos actuales</li>
+                                <li>Notificaciones y avisos automáticos</li>
+                                <li>Mantenimiento y correcciones incluidos</li>
+                                <li>Soporte por WhatsApp</li>
+                                <li>Asesoramiento para sumar nuevas automatizaciones</li>
                             </ul>
                         </div>
                         <div class="pricing_btn">
@@ -415,15 +436,19 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                 <div class="col-lg-4 col-md-8 col-sm-10">
                     <div class="single_pricing text-center pricing_active pricing_color_2 mt-30">
                         <div class="pricing_top_bar">
-                            <h5 class="pricing_title">Agentes de whatsapp</h5>
+                            <h5 class="pricing_title">Agentes de WhatsApp</h5>
                             <i class="lni lni-whatsapp"></i>
-                            <span class="price">$25.000</span>
+                            <span class="price"><small class="price_desde">desde</small>$25.000<small class="price_mes">/mes</small></span>
                         </div>
                         <div class="pricing_list">
                             <ul>
-                                <li>Soporte técnico 24/7</li>
-                                <li>Free Update</li>
-                                <li>unimited download</li>
+                                <li>Bot personalizado con tu información, servicios y tono</li>
+                                <li>Atención de consultas frecuentes las 24 horas</li>
+                                <li>Gestión de turnos, pedidos o reservas</li>
+                                <li>Recordatorios automáticos a tus clientes</li>
+                                <li>Derivación a una persona cuando el bot no puede resolver algo</li>
+                                <li>Panel o resumen para ver las conversaciones</li>
+                                <li>Mantenimiento y actualizaciones incluidos</li>
                             </ul>
                         </div>
                         <div class="pricing_btn">
@@ -436,13 +461,16 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                         <div class="pricing_top_bar">
                             <h5 class="pricing_title">Web</h5>
                             <i class="lni lni-code"></i>
-                            <span class="price">$20.000</span>
+                            <span class="price"><small class="price_desde">desde</small>$20.000<small class="price_mes">/mes</small></span>
                         </div>
                         <div class="pricing_list">
                             <ul>
-                                <li>Soporte técnico 24/7</li>
-                                <li>Actualizaciones periódicas</li>
-                                <li>Asesoramiento para nuevas automatizaciones</li>
+                                <li>Diseño adaptado a celulares</li>
+                                <li>Hosting y dominio a convenir<!-- ▶ DEFINIR: escribí "Hosting y dominio incluidos" o aclarar que no están incluidos --></li>
+                                <li>Formulario de contacto y botón de WhatsApp</li>
+                                <li>Cambios y actualizaciones mensuales</li>
+                                <li>Mantenimiento técnico</li>
+                                <li>Posibilidad de integrarla con tu bot o tus automatizaciones</li>
                             </ul>
                         </div>
                         <div class="pricing_btn">
