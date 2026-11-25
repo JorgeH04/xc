@@ -90,21 +90,19 @@
             z-index: 99;
         }
 
-        /* "desde $X /mes" en las tarjetas de planes */
-        .pricing_area .price small {
-            font-size: 16px;
+        /* Reemplazo del precio: etiqueta "Presupuesto a medida" en las tarjetas */
+        .pricing_area .price.price_custom {
+            display: block;
+            font-size: 26px;
+            line-height: 1.2;
+        }
+
+        .pricing_area .price.price_custom small {
+            display: block;
+            font-size: 14px;
             font-weight: 500;
             color: #677284;
-        }
-
-        .pricing_area .price .price_desde {
-            display: block;
-            line-height: 1;
-            margin-bottom: 6px;
-        }
-
-        .pricing_area .price .price_mes {
-            margin-left: 2px;
+            margin-top: 8px;
         }
     </style>
     
@@ -177,7 +175,7 @@
                                         <a class="page-scroll" href="#abo">Desarrollo Web</a>
                                     </li>                                    
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#pricing">Planes</a>
+                                        <a class="page-scroll" href="#pricing">Presupuesto</a>
                                     </li>
                                 </ul>
                             </div> <!-- navbar collapse -->
@@ -197,7 +195,7 @@
             <div class="col-lg-6">
                 <div class="header_hero_content mt-45">
                     <h2 class="header_title">Tecnología que simplifica tu negocio</h2>
-                    <p>Diseñamos automatizaciones, bots de WhatsApp y herramientas digitales para hacer que tu negocio trabaje de manera más eficiente.</p>
+                    <p>Analizamos tu flujo de trabajo, detectamos dónde se pierde tiempo y lo convertimos en un proceso automático, con inteligencia artificial, bots de WhatsApp e integraciones a medida.</p>
                     
                 </div> <!-- header hero content -->
             </div>
@@ -398,10 +396,10 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
     <section id="pricing" class="pricing_area mt-80 pt-75 pb-80">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="section_title text-center pb-25">
-                        <h4 class="title">Planes</h4>
-                        <p>Cada solución tiene una tarifa mensual que contempla el servicio y su mantenimiento. El precio se establece en función de las necesidades de tu negocio, las funcionalidades requeridas y la complejidad de la implementación. Cada tarifa establece un precio base que puede variar según los requerimientos. Cada tarifa establece un precio base que puede variar según los requerimientos.</p>
+                        <h4 class="title">Una solución a la medida de tu negocio</h4>
+                        <p>Cada proyecto es distinto, por eso no trabajamos con precios cerrados. Primero analizamos tu flujo de trabajo sin costo y después te pasamos un presupuesto claro, con una tarifa mensual que incluye el servicio y su mantenimiento. El valor depende de lo que necesites, las funcionalidades requeridas y la complejidad de la implementación.</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -414,7 +412,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                             <h5 class="pricing_title">Automatizaciones</h5>
 
                              <i class="lni lni-cog"></i>
-                            <span class="price"><small class="price_desde">desde</small>$50.000<small class="price_mes">/mes</small></span>
+                            <span class="price price_custom">Presupuesto a medida<small>Tarifa mensual según tu caso</small></span>
                         </div>
                         <div class="pricing_list">
                             <ul>
@@ -428,7 +426,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                             </ul>
                         </div>
                         <div class="pricing_btn">
-                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Quiero%20pedir%20un%20presupuesto%20para%20automatizaciones." class="main-btn main-btn-2" target="_blank" rel="noopener noreferrer">Consultar</a>
+                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Quiero%20pedir%20un%20presupuesto%20para%20automatizaciones." class="main-btn main-btn-2" target="_blank" rel="noopener noreferrer">Pedir presupuesto</a>
                         </div>
                     </div>  <!-- single pricing -->
                 </div>
@@ -437,7 +435,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                         <div class="pricing_top_bar">
                             <h5 class="pricing_title">Agentes de WhatsApp</h5>
                             <i class="lni lni-whatsapp"></i>
-                            <span class="price"><small class="price_desde">desde</small>$25.000<small class="price_mes">/mes</small></span>
+                            <span class="price price_custom">Presupuesto a medida<small>Tarifa mensual según tu caso</small></span>
                         </div>
                         <div class="pricing_list">
                             <ul>
@@ -451,7 +449,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                             </ul>
                         </div>
                         <div class="pricing_btn">
-                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Quiero%20pedir%20un%20presupuesto%20para%20un%20agente%20de%20WhatsApp." class="main-btn" target="_blank" rel="noopener noreferrer">Consultar</a>
+                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Quiero%20pedir%20un%20presupuesto%20para%20un%20agente%20de%20WhatsApp." class="main-btn" target="_blank" rel="noopener noreferrer">Pedir presupuesto</a>
                         </div>
                     </div>  <!-- single pricing -->
                 </div>
@@ -460,7 +458,7 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                         <div class="pricing_top_bar">
                             <h5 class="pricing_title">Web</h5>
                             <i class="lni lni-code"></i>
-                            <span class="price"><small class="price_desde">desde</small>$20.000<small class="price_mes">/mes</small></span>
+                            <span class="price price_custom">Presupuesto a medida<small>Tarifa mensual según tu caso</small></span>
                         </div>
                         <div class="pricing_list">
                             <ul>
@@ -473,11 +471,12 @@ Sitios institucionales, páginas para mostrar servicios, formularios, sistemas d
                             </ul>
                         </div>
                         <div class="pricing_btn">
-                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Quiero%20pedir%20un%20presupuesto%20para%20una%20p%C3%A1gina%20web." class="main-btn main-btn-2" target="_blank" rel="noopener noreferrer">Consultar</a>
+                            <a href="https://wa.me/5491153896519?text=Hola%20Megadev!%20Quiero%20pedir%20un%20presupuesto%20para%20una%20p%C3%A1gina%20web." class="main-btn main-btn-2" target="_blank" rel="noopener noreferrer">Pedir presupuesto</a>
                         </div>
                     </div>  <!-- single pricing -->
                 </div>
             </div> <!-- row -->
+
         </div> <!-- container -->
     </section>
 
